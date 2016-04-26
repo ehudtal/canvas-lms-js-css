@@ -14,7 +14,7 @@ nicely [here](http://nathanhoad.net/git-workflow-forks-remotes-and-pull-requests
 3. Now you can see all your code in the ```canvas-lms-js-css```
    directory
 3. Add the upstream remote so you can keep your code in sync with the
-   beyondz-code: ```git remote add upstream https://github.com/beyondz-z/canvas-lms-js-css```
+   beyondz-code: ```git remote add upstream https://github.com/beyond-z/canvas-lms-js-css```
 
 ## Ongoing changes
 1. Always start by getting your local code and your forked code on
