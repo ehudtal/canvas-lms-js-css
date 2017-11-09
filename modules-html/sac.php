@@ -95,7 +95,7 @@ require('functions.php');
   <h2 id="how">How do I do this?</h2>
   <h3>How do I dissect a Case Study?</h3>
   <?php bz_open_box();?>
-    <p>Which of the following is <em><strong>not</strong></em> something case studies are used for?</p>
+    <p>Which of the following is <em><strong>not</strong></em> the purpose of case studies?</p>
     <?php 
     $items = array(
       'Provide solutions to the problem ',
@@ -195,14 +195,66 @@ require('functions.php');
     </table>
   <?php
   bz_close_box();
+  //
+  bz_open_box('video','Watch this video of a case study discussion:');
+  ?>
+    <?php
+    //bz_embed_video($source, $videoid, $duration, $caption, $transcript, $instructions);
+    ?>    
+    <p>Now that you’ve seen one in action, what would you say are typical norms of a case study discussion?</p>
+    <?php
+    bz_make_textarea();
+    ?>
+  <?php
+  bz_close_box();
+  //
+  bz_open_box('answer');
+  ?>
+  <p>Here are some typical case study discussion norms:</p>
+  <ul>
+    <li>Keep an open mind</li>
+    <li>Changing your mind is encouraged</li>
+    <li>Actively participate and assert your ideas</li>
+    <li>Stick to the case (everything you need is in it)</li>
+    <li>Listen actively</li>
+    <li>Build on observations of others</li>
+    <li>Help move the discussion forward</li>
+    <li>It’s okay to be unclear or contradict yourself </li>
+  </ul>
+  <?php 
+  bz_close_box();
+  //
+  bz_open_box('pulse', 'How are you feeling about participating in the upcoming case study discussion with your cohort? (check all that apply)');
+    $items = array(
+      array(
+        'content' => 'Nervous. I’m not someone who likes to speak up a lot. ',
+        'feedback' => 'Make sure you’ve internalized the case and push yourself to speak up. Your cohort members want to hear your opinions. ',
+      ),
+      array(
+        'content' => 'Unprepared. I probably need to read the case study again. ',
+        'feedback' => 'By all means! Reading it again will help you feel more prepared. '
+      ),
+      array(
+        'content' => 'Excited! It’s cool we get to solve a real-world problem. ',
+        'feedback' => 'Awesome! We’re excited that you’re excited. '
+      ),
+      array(
+        'content' => 'Not thrilled. This feels irrelevant to my career interests. ',
+        'feedback' => 'There’s a lot you can learn from any case, even if it is about people working in an entirely different industry. Think about what’s transferrable from this case study to your teamwork within your cohort, as well as your team in your future career. ',
+      ),
+    );
+    bz_make_cr_list($items);
+  bz_close_box();
   ?>
   <h2 id="wrap-up">Wrap-up</h2>
-  <p>In this module we looked at case studies, which are popular and useful learning tools in many academic and professional situations.</p>
+  <p>In this module we looked at case studies, which are popular learning tools in many academic and professional situations. We went over the following:</p>
   <ul>
-    <li></li>
+    <li>The steps it takes to dissect a case study (skim, read thorouglhy, take notes, come up with recommendations)</li>
+    <li>The process for discussing a case study in a group (defining the problem, diagnosis, suggesting solutions)</li>
+    <li>The norms for running the discussion in the most productive way</li>
   </ul>
   <h3>Next Steps</h3>
-  <p></p>
+  <p>Be sure you're prepared for the case study discussion!</p>
 </div>
 <script src="../new-ui-sandbox.js"></script>
 <progress max="100" id="bz-progress-bar" value="14"></progress>
